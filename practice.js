@@ -33,10 +33,9 @@ var user = {
     //Code Here
 
 //Now, invoke the getUsername method and verify you got the username of the object and not anything else.
-
+user.getUsername();
 
 //Next Problem
-
 
 // Write the function definitions which will make the following function invocations function properly.
 
@@ -76,8 +75,8 @@ var getMyUsername = function() {
  return this.username;
 };
 
-var userName = getMyUsername(); //Fix this
-
+var userName = getMyUsername.call(myUser); //Fix this
+console.log(userName);
 //Above you're given an object, and  a function. What will the getUsername function return?
 //Note(no tests)
   //Answer Here
