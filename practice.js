@@ -1,15 +1,16 @@
+
 //We're in a job interview. Answer the following questions (try to not look at your notes unless you have to).
   // 1) What is the purpose of the 'this keyword'?
 
-      //Answer
+      //Answer To bind the code to an object
 
   // 2) What are the four rules that govern what the 'this keyword' is bound to and describe each?
 
-      //Answer
+      //Answer implicit, explicit, window (default), new
 
   // 3) What is the difference between call and apply?
 
-      //Answer
+      //Answer call invokes the function, apply does not
 
   // 4) What does .bind do?
 
@@ -22,7 +23,13 @@
   //username --> which is a string
   //email --> which is a string
   //getUsername --> which is a function that returns the current object's username property. *Don't use 'user' instead use the 'this' keyword*
-
+var user = {
+    username: "Chris",
+    email: "mchrisgagnier@gmail.com",
+    getUsername: function() {
+        return(this.username);
+    }
+}
     //Code Here
 
 //Now, invoke the getUsername method and verify you got the username of the object and not anything else.
