@@ -37,7 +37,16 @@ user.getUsername();
 
 //Next Problem
 
+
+
+
 // Write the function definitions which will make the following function invocations function properly.
+
+function Car(make, model, year) {
+     this.make = make;
+     this.model = model;
+     this.year = year;
+ }
 
   //Function Invocations Here
 
@@ -61,6 +70,9 @@ var getYear = function(){
 
 //Note(no tests)
   //Code Here
+
+
+
 
 
 //New Problem
